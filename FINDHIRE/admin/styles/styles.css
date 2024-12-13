@@ -1,0 +1,467 @@
+
+body, h1, h2, h3, p, div, a, form, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #4A4A4A;
+}
+
+body {
+    background-color: #F8FAFC;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color: #D9EAFD;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 6);
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    color: #4A4A4A;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    color: #6C8EBF;
+}
+
+/* Forms */
+form {
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #4A4A4A;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #BCCCDC;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form input:focus, form textarea:focus {
+    outline: none;
+    border-color: #6C8EBF;
+    box-shadow: 0 0 4px rgba(108, 142, 191, 0.5);
+}
+
+form button {
+    background-color: #9AA6B2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #6C8EBF;
+}
+
+/* Alerts */
+.alert {
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+}
+
+.alert-success {
+    background-color: #D9EAFD;
+    color: #4A4A4A;
+}
+
+.alert-danger {
+    background-color: #FADBD8;
+    color: #A94442;
+}
+
+/* Job Post Display */
+.job-post {
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-post h3 {
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.job-post p {
+    color: #6C6C6C;
+    margin-bottom: 8px;
+}
+
+/* Profile Section */
+.userInfo {
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userInfo span {
+    color: #6C8EBF;
+    font-weight: bold;
+}
+.job-posts-table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.job-posts-table th, .job-posts-table td {
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 1px solid #D9EAFD;
+}
+
+.job-posts-table th {
+    background-color: #BCCCDC;
+    color: #F8FAFC;
+    font-weight: bold;
+}
+
+.job-posts-table tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+.job-posts-table tr:hover {
+    background-color: #D9EAFD;
+}
+
+.job-posts-table td a {
+    color: #598ea3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.job-posts-table td a:hover {
+    text-decoration: underline;
+    color: #3d9ca8;
+}
+
+.notification {
+    background-color: #BCCCDC;
+    color: #333;
+    padding: 20px auto;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.notification-badge {
+    background-color: #D9EAFD;
+    color: #333;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.job-post-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 1px solid #BCCCDC;
+}
+
+table th {
+    background-color: #BCCCDC;
+    color: #333;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+table tr:hover {
+    background-color: #D9EAFD;
+}
+
+table td a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+    color: #104E8B;
+}
+
+/* View Application Page */
+.details {
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    
+}
+
+.details p {
+    font-size: 1.1em;
+    margin-bottom: 12px;
+}
+
+.details strong {
+    color: #6C8EBF;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.accept, .reject {
+    background-color: #80b2e7;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.accept:hover {
+    background-color: #6C8EBF;
+}
+
+.reject {
+    background-color: #FADBD8;
+}
+
+.reject:hover {
+    background-color: #A94442;
+}
+
+/* Header */
+.header {
+    background-color: #D9EAFD;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+    color: #4A4A4A;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Application Status */
+.status {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.status.pending {
+    background-color: #F0E68C; /* Neutral color for pending */
+    color: #4A4A4A;
+}
+
+.status.accepted {
+    background-color: #D4EDDA; /* Light green for accepted */
+    color: #155724;
+}
+
+.status.rejected {
+    background-color: #FADBD8; /* Light red for rejected */
+    color: #A94442;
+}
+
+/* Chatbox Container */
+.chat-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Message Box */
+.message-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* Individual Message Styling */
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+.message.sent {
+    background-color: #d4edda; /* Light green for sent messages */
+    margin-left: 20px;
+    text-align: right;
+}
+
+.message.received {
+    background-color: #f8d7da; /* Light red for received messages */
+    margin-right: 20px;
+    text-align: left;
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.message small {
+    color: #888;
+}
+
+/* Admin Reply Form Styling */
+form {
+    margin-top: 20px;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #5fb5dd; /* Green for send button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #196d81; /* Darker green on hover */
+}
+
+/* No Messages Found */
+.message-box p {
+    font-style: italic;
+    color: #555;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-posts-table {
+        width: 100%;
+    }
+
+    .job-posts-table th, .job-posts-table td {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .job-post-container {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+

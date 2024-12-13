@@ -1,0 +1,533 @@
+/* General Reset */
+body, h1, h2, h3, p, div, a, form, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #4A4A4A;
+}
+
+body {
+    background-color: #F8FAFC;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #D9EAFD;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 7);
+}
+
+.navbar h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    color: #4A4A4A;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    color: #6C8EBF;
+}
+
+/* Job Listings */
+.job-listings {
+    margin-top: 30px;
+}
+
+.job-post {
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-post h3 {
+    color: #4A4A4A;
+    margin-bottom: 10px;
+}
+
+.job-post p {
+    color: #6C6C6C;
+    margin-bottom: 8px;
+}
+
+/* Apply Button */
+.job-post .apply-button {
+    background-color: #9AA6B2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.job-post .apply-button:hover {
+    background-color: #6C8EBF;
+}
+
+/* Profile Section */
+.profile-section {
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-section h3 {
+    color: #4A4A4A;
+    margin-bottom: 15px;
+}
+
+.profile-section p {
+    color: #6C6C6C;
+}
+
+.profile-section span {
+    color: #6C8EBF;
+    font-weight: bold;
+}
+
+/* Table for Applications */
+.application-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application-table th, .application-table td {
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 1px solid #D9EAFD;
+}
+
+.application-table th {
+    background-color: #BCCCDC;
+    color: #F8FAFC;
+    font-weight: bold;
+}
+
+.application-table tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+.application-table tr:hover {
+    background-color: #D9EAFD;
+}
+
+.application-table td a {
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.application-table td a:hover {
+    text-decoration: underline;
+    color: #104E8B;
+}
+
+/* Notifications */
+.notification {
+    background-color: #BCCCDC;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.notification-badge {
+    background-color: #D9EAFD;
+    color: #333;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Chatbox */
+.chat-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+}
+
+.message.sent {
+    background-color: #d4edda;
+    margin-left: 20px;
+    text-align: right;
+}
+
+.message.received {
+    background-color: #f8d7da;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.message small {
+    color: #888;
+}
+
+/* Admin Reply Form */
+form {
+    margin-top: 20px;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #5fb5dd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="submit"]:hover {
+    background-color: #196d81;
+}
+
+.application-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.application-container h1 {
+    font-size: 1.8em;
+    color: #4A4A4A;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border: 1px solid #BCCCDC;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 1px solid #BCCCDC;
+}
+
+table th {
+    background-color: #BCCCDC;
+    color: #F8FAFC;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+table tr:hover {
+    background-color: #D9EAFD;
+}
+
+table td a {
+    color: #598ea3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+    color: #3d9ca8;
+}
+
+/* No Applications */
+.application-container p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #6C6C6C;
+}
+
+/* Status Colors */
+.status.pending {
+    background-color: #F0E68C; /* Neutral color for pending */
+    color: #4A4A4A;
+}
+
+.status.accepted {
+    background-color: #D4EDDA; /* Light green for accepted */
+    color: #155724;
+}
+
+.status.rejected {
+    background-color: #FADBD8; /* Light red for rejected */
+    color: #A94442;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8FAFC; /* Background Color */
+    color: #9AA6B2; /* Text Color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #D9EAFD; /* Light blue background */
+    color: #155724; /* Success color */
+}
+
+.alert-danger {
+    background-color: #BCCCDC; /* Light grayish blue background */
+    color: #A94442; /* Error color */
+}
+
+/* Container for the application form */
+.apply-job-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.apply-job-container h1 {
+    color: #9AA6B2;
+}
+
+.apply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* Form Inputs */
+.apply-form input[type="text"],
+.apply-form input[type="email"],
+.apply-form textarea,
+.apply-form input[type="file"] {
+    padding: 10px;
+    border: 1px solid #BCCCDC;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.apply-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Submit Button */
+.submit-button {
+    padding: 12px 20px;
+    background-color: #D9EAFD; /* Light blue background */
+    border: none;
+    border-radius: 5px;
+    color: #4A4A4A;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #BCCCDC; /* Light grayish blue on hover */
+}
+
+/* Link Styling */
+.message-hr-link {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.message-hr-link:hover {
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #BCCCDC;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #D9EAFD;
+    border: none;
+    border-radius: 4px;
+    color: #4A4A4A;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #BCCCDC;
+}
+
+/* Links */
+a {
+    color: #4A4A4A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Register Form Special */
+form p {
+    width: 100%;
+    text-align: left;
+}
+
+form p label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .job-posts-table {
+        width: 100%;
+    }
+
+    .job-posts-table th, .job-posts-table td {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .profile-section {
+        padding: 15px;
+    }
+
+    .application-table td {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .job-post .apply-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .application-container h1 {
+        font-size: 1.5em;
+    }
+
+    .application-container {
+        padding: 15px;
+    }
+}
